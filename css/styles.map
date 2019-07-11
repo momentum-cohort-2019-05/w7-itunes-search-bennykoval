@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss"
+	],
+	"sourcesContent": [
+		"// Text meant only for screen readers.\n.all-access {\n\tclip-path: rect(1px, 1px, 1px, 1px);\n    height: 1px;\n    width: 1px;\n\toverflow: hidden;\n\tposition: absolute !important;\n}"
+	],
+	"names": [],
+	"mappings": ";AACA,AAAA,WAAW,CAAC;EACX,SAAS,EAAE,wBAAwB;EAChC,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EACb,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,mBAAmB;CAC7B"
+}
