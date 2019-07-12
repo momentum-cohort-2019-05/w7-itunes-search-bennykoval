@@ -1,10 +1,72 @@
 /* line 2, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#333, 30vh, #111);
+  background-repeat: no-repeat;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .all-access {
   clip-path: rect(1px, 1px, 1px, 1px);
   height: 1px;
   width: 1px;
   overflow: hidden;
   position: absolute !important;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.search-input {
+  font-family: sans-serif;
+  font-size: 1rem;
+  outline: none;
+  width: 50%;
+  padding: 15px 25px 15px 50px;
+  border: none;
+  border-radius: 15px;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png") !important;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+/* line 43, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.detail-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 55, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.list-item {
+  align-content: center;
+  color: #FFF;
+  font-family: sans-serif;
+  text-transform: lowercase;
+  font-size: 1rem;
+  align-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

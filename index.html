@@ -14,11 +14,16 @@
     </header>
 
     <main>
-        <form id="search-form" role="search">
+        <form class="input-container" id="search-form" role="search">
             <label class="all-access" for="search-field">Enter an artist or band name to search for song samples.</label>
             <input id="search-field" class="search-input" name="search-field" type="search" placeholder="Search" />
             <!-- <button id="search-button" type="submit"><span class="all-access">Submit your </span>Search</button> -->
         </form>
+        <audio controls id="audio-player" src=''>
+            Your browser does not support the 
+            <code>audio</code>
+        </audio>
+        <section class="search-results" id="search-results"></section>
 
     </main>
 </body>
