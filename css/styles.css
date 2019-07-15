@@ -5,13 +5,33 @@
 }
 
 /* line 6, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.intro-div {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.line-one {
+  font-size: 1.5rem;
+  text-shadow: 1.5px 1.5px #a571de;
+  padding: 10px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.line-two {
+  font-size: 1.4rem;
+  text-shadow: 1.5px 1.5px #a571de;
+  padding: 10px;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .data-head {
   padding-top: 10px;
   text-decoration: none;
   color: #fff;
 }
 
-/* line 10, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 26, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .data-head:hover, .data-head:focus-within {
   color: #d4beeb;
   border-bottom: 1px #d4beeb solid;
@@ -19,14 +39,14 @@
   transition: border-bottom 0.2s ease-in-out;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 35, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .search-results {
   display: flex;
   width: 80%;
   padding-bottom: 10px;
 }
 
-/* line 25, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 41, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .gradient-border {
   width: 90%;
   padding: 1rem;
@@ -36,7 +56,7 @@
   border-image: linear-gradient(to bottom, #d4beeb, rgba(0, 0, 0, 0)) 1 100%;
 }
 
-/* line 39, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 55, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 #show-on-search {
   color: #fff;
   font-family: 'Literata', serif;
@@ -44,25 +64,25 @@
   width: 100%;
 }
 
-/* line 46, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 62, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 h2 {
   margin-top: 10px;
 }
 
-/* line 50, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 66, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 #artist-but-sad {
   color: rgba(201, 206, 214, 0.8);
   font-size: 0.5rem;
 }
 
-/* line 54, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 70, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .underline {
   border-color: rgba(201, 206, 214, 0.5);
   margin-top: 5px;
   margin-bottom: 25px;
 }
 
-/* line 59, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 75, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 body {
   width: 100%;
   height: 100%;
@@ -73,7 +93,7 @@ body {
   justify-content: center;
 }
 
-/* line 69, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 85, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .input-container {
   display: flex;
   justify-content: center;
@@ -81,7 +101,7 @@ body {
   padding-top: 10px;
 }
 
-/* line 76, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 92, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .search-input {
   margin-bottom: 10px;
   font-family: sans-serif;
@@ -96,7 +116,7 @@ body {
   background-size: 40px;
 }
 
-/* line 90, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 106, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .detail-list {
   list-style-type: none;
   display: flex;
@@ -104,54 +124,54 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 97, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 113, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .list-item {
   color: #FFF;
   margin: auto;
   padding-right: 10px;
 }
 
-/* line 103, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 119, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 #img-clicky {
   border-radius: 15px;
   filter: drop-shadow(3px 3px 4px #333);
 }
 
-/* line 109, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 125, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .song-img:hover, .song-img:focus-within {
   transition: opacity 0.2s ease-in-out;
   opacity: 0.4;
 }
 
-/* line 113, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 129, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .song-img:hover:active, .song-img:focus-within:active {
   opacity: 0.4;
 }
 
-/* line 118, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 134, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 #title {
   font-size: .8rem;
   display: block;
   margin-top: 5%;
 }
 
-/* line 124, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 140, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .music {
   display: flex;
 }
 
-/* line 128, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 144, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 #artist {
   display: block;
   margin-top: 5%;
 }
 
-/* line 133, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 149, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .block {
   display: block;
 }
 
-/* line 137, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 153, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container {
   display: none;
   text-align: center;
@@ -163,7 +183,7 @@ body {
   justify-content: space-around;
 }
 
-/* line 146, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 162, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button {
   outline: none;
   font-size: 1rem;
@@ -177,19 +197,19 @@ body {
   text-decoration: none;
 }
 
-/* line 157, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 173, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button:hover, .audio-player-container button:focus-within {
   color: #d4beeb;
   border: 1px #d4beeb solid;
   border-radius: 50%;
 }
 
-/* line 164, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 180, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button:hover:active, .audio-player-container button:focus-within:active {
   color: #d4beeb;
 }
 
-/* line 172, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 188, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .all-access {
   clip-path: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -198,13 +218,13 @@ body {
   position: absolute !important;
 }
 
-/* line 180, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 196, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress {
   width: 50%;
   margin-top: 20px;
 }
 
-/* line 184, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 200, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -213,19 +233,19 @@ progress[value] {
   height: 5px;
 }
 
-/* line 191, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 207, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress[value]::-webkit-progress-bar {
   background-color: white;
   border-radius: 2px;
   color: #a571de;
 }
 
-/* line 196, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 212, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress::-webkit-progress-value {
   background-color: #a571de;
 }
 
-/* line 200, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 216, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .time-stamp {
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -233,11 +253,11 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 207, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+  /* line 223, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
   .search-results {
     flex-wrap: wrap;
   }
-  /* line 211, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+  /* line 227, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
   .gradient-border {
     width: 80%;
   }

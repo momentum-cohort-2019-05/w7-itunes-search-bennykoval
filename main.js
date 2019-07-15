@@ -78,6 +78,7 @@ searchForm.addEventListener('submit', function (event) {
     const albumDiv = document.querySelector('#album-search-results')
     const showOnSearch = document.querySelector('#show-on-search')
     const audioPlayerContainer = document.querySelector('.audio-player-container')
+    const introDiv = document.querySelector('.intro-div')
 
     let newUrl = makeNewUrl('song');
     fetch(newUrl)
@@ -85,6 +86,7 @@ searchForm.addEventListener('submit', function (event) {
 
         .then(function (data) {
             showOnSearch.style.display = 'block'
+            introDiv.style.display = 'none'
             audioPlayerContainer.style.display = 'flex'
             songDiv.innerHTML = ''
             data.results.length = Math.min(data.results.length, 5)

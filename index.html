@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
-    <title>Music dingy</title>
+    <title>iPreview</title>
 </head>
 <body>
     <div class="gradient-border">
@@ -20,13 +20,18 @@
             <input id="search-field" class="search-input" name="search-field" type="search" placeholder="Search" />
             <!-- <button id="search-button" type="submit"><span class="all-access">Submit your </span>Search</button> -->
         </form>
+        <div class="intro-div">
+                <h1 class="line-one">Welcome to iPreview, the music streaming app for people with short attention spans!</h1>
+                <!-- <h2 class="line-two">Have you ever just wanted to listen to just, like, 30 seconds of a song?</h2>
+                <h2 class="line-two">If so, search for a preview above!</h2> -->
+            </div>
     </header>
 
     <main>
 
         <div id="show-on-search" class="music-list-container">
 
-            <h2><a class="data-head" href="#">Songs</a></h2>
+            <h2><a class="data-head" id="more-songs" href="songs.html">Songs</a></h2>
             <hr class="underline">
             <section class="search-results" id="song-search-results"></section>
 
