@@ -110,6 +110,9 @@ body {
     &:focus-within {
         transition: opacity 0.2s ease-in-out;
         opacity: 0.4;
+        &:active {
+            opacity: 0.4;
+        }
     }
 }
 #title {
