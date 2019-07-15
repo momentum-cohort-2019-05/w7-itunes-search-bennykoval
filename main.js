@@ -147,17 +147,16 @@ return current_time;
 
 function functProgressBar() {
     let player = document.querySelector('#audio-player');
-    let length = player.duration;
-    let current_time = player.currentTime;
+    const { duration, currentTime } = player;
   
-    let totalLength = calculateTotalValue(length);
-    jQuery("#end-time").html(totalLength);
+    let totalLength = calculateTotalValue(duration);
+    document.querySelector('#end-time').innerHTML = totalLength;
     
-    let currentTime = calculateCurrentValue(current_time);
-    jQuery("#start-time").html(currentTime);
+    const calculatedCurrentTime = calculateCurrentValue(currentTime);
+    document.querySelector('#start-time').innerHTML = calculatedCurrentTime;
 
     let progressBar = document.querySelector('#progress-bar');
-    progressBar.value = (player.currentTime / player.duration);
+    progressBar.value = (currentTime / duration);
     progressBar.addEventListener("click", seek);
 
 
