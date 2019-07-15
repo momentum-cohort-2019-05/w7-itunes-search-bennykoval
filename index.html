@@ -48,13 +48,13 @@
                     Your browser does not support the 
                     <code>audio</code>
                 </audio>
-            <button onclick = "document.querySelector('#audio-player').play()">►</button>
-            <button onclick = "document.querySelector('#audio-player').pause()"><strong>||</strong></button>
+            <button aria-label="Play" onclick = "document.querySelector('#audio-player').play()">►</button>
+            <button aria-label="Pause" onclick = "document.querySelector('#audio-player').pause()"><strong>||</strong></button>
             <p class="time-stamp" id="start-time"></p>
             <progress id="progress-bar" value="0" max="1"></progress>
             <p class="time-stamp" id="end-time"></p>
-            <button onclick = "document.querySelector('#audio-player').volume += 0.1"><strong>+</strong></button>
-            <button onclick = "document.querySelector('#audio-player').volume -= 0.1"><strong>-</strong></button>
+            <button aria-label="Increase volume" onclick = "document.querySelector('#audio-player').volume += 0.1"><strong>+</strong></button>
+            <button aria-labe="Decrease volume" onclick = "document.querySelector('#audio-player').volume -= 0.1"><strong>-</strong></button>
         </div>
         
     </footer>

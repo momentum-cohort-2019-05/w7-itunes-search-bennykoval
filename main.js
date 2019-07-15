@@ -15,9 +15,11 @@ function musicNode(music) {
 
     musicDiv.innerHTML = `
         <ul class="detail-list">
-            <li class="list-item" id="img"><img id="img-clicky" data-preview="${music.previewUrl}" src=${music.artworkUrl100}></li>
-            <li class="list-item" id="title">${music.trackName}</li>
-            <li class="list-item" id="artist">${music.artistName}</li>
+            <li class="list-item" id="img"><img id="img-clicky" class="song-img" data-preview="${music.previewUrl}" src=${music.artworkUrl100}></li>
+            <div class="block>
+                <li class="list-item" id="title">${music.trackName}</li>
+                <li class="list-item" id="artist-but-sad" id="artist">${music.artistName}</li>
+            </div>
         </ul>
     `
     return musicDiv;
@@ -29,7 +31,7 @@ function artistNode(music) {
     artistDiv.classList.add('music');
     artistDiv.innerHTML = `
         <ul class="detail-list">
-            <li class="list-item" id="artist">${music.artistName}</li>
+            <li class="list-item" id="artist-center" id="artist">${music.artistName}</li>
         </ul>
     `
     return artistDiv;
@@ -48,8 +50,10 @@ function albumNode(music) {
     albumDiv.innerHTML = `
         <ul class="detail-list">
             <li class="list-item" id="img"><img id="img-clicky" data-preview="${music.previewUrl}" src=${music.artworkUrl100}></li>
-            <li class="list-item" id="title">${music.collectionName}</li>
-            <li class="list-item" id="artist">${music.artistName}</li>
+            <div class="block">
+                <li class="list-item" id="title">${music.collectionName}</li>
+                <li class="list-item" id="artist-but-sad" id="artist">${music.artistName}</li>
+            </div>
         </ul>
     `
     return albumDiv;
@@ -73,6 +77,7 @@ searchForm.addEventListener('submit', function (event) {
     const artistDiv = document.querySelector('#artist-search-results');
     const albumDiv = document.querySelector('#album-search-results')
     const showOnSearch = document.querySelector('#show-on-search')
+    const audioPlayerContainer = document.querySelector('.audio-player-container')
 
     let newUrl = makeNewUrl('song');
     fetch(newUrl)
@@ -80,8 +85,9 @@ searchForm.addEventListener('submit', function (event) {
 
         .then(function (data) {
             showOnSearch.style.display = 'block'
+            audioPlayerContainer.style.display = 'flex'
             songDiv.innerHTML = ''
-            data.results.length = Math.min(data.results.length, 3)
+            data.results.length = Math.min(data.results.length, 5)
             for (let music of data.results) {
                     songDiv.appendChild(musicNode(music))
                 }
@@ -95,7 +101,7 @@ searchForm.addEventListener('submit', function (event) {
         .then(function (data) {
             showOnSearch.style.display = 'block'
             artistDiv.innerHTML = ''
-            data.results.length = Math.min(data.results.length, 3)
+            data.results.length = Math.min(data.results.length, 5)
             for (let music of data.results) {
                     artistDiv.appendChild(artistNode(music))
                 }
@@ -109,7 +115,7 @@ searchForm.addEventListener('submit', function (event) {
         .then(function (data) {
             showOnSearch.style.display = 'block'
             albumDiv.innerHTML = ''
-            data.results.length = Math.min(data.results.length, 3)
+            data.results.length = Math.min(data.results.length, 5)
             for (let music of data.results) {
                     albumDiv.appendChild(albumNode(music))
                 }
