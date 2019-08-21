@@ -15,10 +15,12 @@ function musicNode(music) {
 
     musicDiv.innerHTML = `
         <ul class="detail-list">
-            <li class="list-item" id="img"><img id="img-clicky" class="song-img" data-preview="${music.previewUrl}" src=${music.artworkUrl100}></li>
+            <li class="list-item" id="img"><img id="img-clicky" class="song-img" data-preview="${music.previewUrl}" data-song="${music.trackName}" data-artist="${music.artistName}" src=${music.artworkUrl100}></li>
             <div class="block>
                 <li class="list-item" id="title">${music.trackName}</li>
                 <li class="list-item" id="artist-but-sad" id="artist">${music.artistName}</li>
+            </div>
+            <div class="pad">
             </div>
         </ul>
     `
@@ -128,9 +130,15 @@ document.querySelector('.search-results').addEventListener('click', function (ev
     if (event.target && event.target.matches('#img-clicky')) {
         musicPlayer.src = event.target.dataset.preview;
         musicPlayer.autoplay = "true";
+
+        const currentSongDiv = document.querySelector('.current-song')
+        let songName = event.target.dataset.song
+        let artistName = event.target.dataset.artist
+        currentSongDiv.innerHTML = `<p class="now-playing-txt">${songName} by ${artistName}</p>`
     }
   })
 })
+
 
 function calculateTotalValue(length) {
     let minutes = Math.floor(length / 60),
@@ -174,5 +182,3 @@ function functProgressBar() {
         progressBar.value = percent / 100;
     }
 };
-
-// functProgressBar(jQuery('#audio-player-container').length);

@@ -178,12 +178,11 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  margin-top: 3%;
   height: 40px;
   justify-content: space-around;
 }
 
-/* line 162, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 161, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button {
   outline: none;
   font-size: 1rem;
@@ -197,34 +196,37 @@ body {
   text-decoration: none;
 }
 
-/* line 173, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 172, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button:hover, .audio-player-container button:focus-within {
   color: #d4beeb;
   border: 1px #d4beeb solid;
   border-radius: 50%;
 }
 
-/* line 180, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 179, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .audio-player-container button:hover:active, .audio-player-container button:focus-within:active {
   color: #d4beeb;
 }
 
-/* line 188, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
-.all-access {
-  clip-path: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  position: absolute !important;
+/* line 185, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.current-song {
+  display: flex;
+  justify-content: center;
 }
 
-/* line 196, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 190, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.now-playing-txt {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/* line 194, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress {
   width: 50%;
   margin-top: 20px;
 }
 
-/* line 200, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 198, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -233,31 +235,40 @@ progress[value] {
   height: 5px;
 }
 
-/* line 207, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 205, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress[value]::-webkit-progress-bar {
   background-color: white;
   border-radius: 2px;
   color: #a571de;
 }
 
-/* line 212, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 210, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 progress::-webkit-progress-value {
   background-color: #a571de;
 }
 
-/* line 216, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+/* line 214, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
 .time-stamp {
   color: white;
   font-family: 'Montserrat', sans-serif;
   padding-top: 15px;
 }
 
+/* line 221, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+.all-access {
+  clip-path: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 223, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+  /* line 230, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
   .search-results {
     flex-wrap: wrap;
   }
-  /* line 227, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
+  /* line 234, ../../../../../../../../../../../../../Users/bkoval/workspace/itunes-search/scss/styles.scss */
   .gradient-border {
     width: 80%;
   }
